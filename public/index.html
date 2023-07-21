@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" type="text/css" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <title>Spotify Web Client</title>
+</head>
+<style>
+
+ .preLoader:empty{
+  background: linear-gradient(135deg, #201606 0%, #000 100%);
+  width: 100vw;
+  height: 100vh;
+ }
+
+#container:empty{
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: swell_container 2s ease-in-out infinite;
+}
+.circle{
+  width: calc(33% - 10px);
+  height: calc(33% - 10px);
+  margin: 5px;
+  border-radius: 100%;
+  background: #c2c2c2;
+}
+#circle1{
+  animation: swell_circle 2s 0.25s infinite;
+}
+#circle2{
+  animation: swell_circle 2s 0.5s infinite;
+}
+#circle3{
+  animation: swell_circle 2s 0.75s infinite;
+}
+</style>
+<body>
+  <noscript>
+  </noscript>
+  <div id="root">
+    <div class="preLoader">
+    <div id="container">
+        <div id="circle1" class="circle"></div>
+        <div id="circle2" class="circle"></div>
+        <div id="circle3" class="circle"></div>
+    </div>
+    </div>
+  </div>
+</body>
+
+</html>

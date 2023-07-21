@@ -1,0 +1,33 @@
+.preLoader{
+    width: 100vw;
+    height: 100vh;
+}
+
+#container{
+  position: absolute;
+  width: $start_width;
+  height: $start_width;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: swell_container 2s ease-in-out infinite;
+}
+.circle{
+  width: calc(33% - 10px);
+  height: calc(33% - 10px);
+  margin: 5px;
+  border-radius: 100%;
+  background: $spotify-text;
+}
+#circle1{
+  animation: swell_circle 2s 0.25s infinite;
+}
+#circle2{
+  animation: swell_circle 2s 0.5s infinite;
+}
+#circle3{
+  animation: swell_circle 2s 0.75s infinite;
+}

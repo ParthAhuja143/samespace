@@ -1,0 +1,24 @@
+//SETTINGS ---------------------------
+@import './01-settings/color';
+@import './01-settings/size';
+
+//TOOLS ------------------------------
+@import './02-tools/mixins';
+
+//ELEMENTS ---------------------------
+@import './03-elements/base';
+@import './03-elements/button';
+@import './03-elements/input';
+
+//COMPONENTS -------------------------
+@import './04-components/common/song';
+@import './04-components/common/preloader';
+@import './04-components/audioPlayer';
+@import './04-components/searchbar';
+@import './04-components/sideNav';
+@import './04-components/songContainer';
+@import './04-components/songPlayer';
+
+//UTILS ------------------------------
+@import './05-utils/state';
+@import './05-utils/animations'

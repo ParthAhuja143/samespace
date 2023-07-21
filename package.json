@@ -1,0 +1,40 @@
+{
+  "name": "spotify-client",
+  "version": "0.2.1",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.7.17",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.2.1",
+    "graphql": "^16.7.1",
+    "moment": "^2.29.4",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-icons": "^4.10.1",
+    "react-loading-skeleton": "^3.3.1",
+    "react-palette": "^1.0.2",
+    "react-redux": "^5.0.7",
+    "react-scripts": "^5.0.1",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
+    "sass": "^1.56.2"
+  },
+  "scripts": {
+    "build-css": "sass --load-path=src src/:src/",
+    "watch-css": "yarn run build-css && sass -w --load-path=src src/:src/",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

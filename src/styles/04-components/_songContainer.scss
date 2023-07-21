@@ -1,0 +1,90 @@
+.song-container{
+    margin: 20px 0;
+	margin-left: 25%;
+	width:25%;
+	
+
+	@media screen and (max-width: 1200px) {
+		width: calc(65% - 40px);
+	}
+
+	@media screen and (max-width: 800px) {
+		width: 100%;
+		margin: 20px;
+	}
+}
+
+/*
+.icon{
+	$iconSize:20px;
+	margin:calc(calc(40px - #{$iconSize}) / 2);
+	height:$iconSize;
+	width:$iconSize;
+	overflow:hidden;
+	&.playing .bar{
+		display:inline-block;
+		height:100%;
+		width:10%;
+		margin:0px 5%;
+		background-color:$spotify-text;
+		
+		$animationLength:1.4s;
+		animation:wobble $animationLength infinite;
+		animation-timing-function:cubic-bezier(0.4, 0.2, 0.6, 0.8);
+		animation-fill-mode:both;
+		&:nth-child(3){
+			$delay: calc(-1* calc($animationLength/4));
+			animation-delay:$delay;
+		}
+		&:nth-child(2){
+			$delay: calc(-2*calc($animationLength/4));
+			animation-delay:$delay;
+		} 
+		&:nth-child(4){
+			$delay: calc(-3 * calc($animationLength /4));
+			animation-delay:$delay;
+		} 
+	}
+	&.pause{
+		display:none;
+	}
+	&.pause .bar{
+		background-color:#fff!important;
+		display:inline-block;
+		height:100%;
+		width:25%;
+		margin:0px 12.5%;
+		background-color: $spotify-text;
+	}
+
+	
+}
+.iconSpace:hover{
+		.icon.playing{
+			display:none;
+		}
+		.icon.pause{
+			display:block;
+		}
+	
+}
+
+@keyframes wobble{
+	0%{
+		transform:translatey(0%);//top
+		//margin-top:0px;
+	}
+	25%{
+		transform:translatey(70%);
+	}
+	50%{
+		transform:translatey(90%);//bottom
+	}
+	75%{
+		transform:translatey(50%);
+	}
+	100%{
+		transform:translatey(0%);
+	}
+}
+*/

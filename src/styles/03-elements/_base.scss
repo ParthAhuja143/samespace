@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'BasierCircleRegular';
+    src: url('../../fonts/basiercircle-regular.otf');
+  }
+  
+  @font-face {
+    font-family: 'BasierSquareRegular';
+    src: local('BasierSquareRegular') url('../../fonts/basiersquare-regular.otf') format('otf');
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "BasierCircleRegular";
+    animation: fadeIn 0.3s ease;
+  }
+  
+  body{
+    height: 100%;
+    color: $primary-text;
+    width: 100vw;
+    background-image: linear-gradient(135deg, #201606 0%, #000 100%);
+  }
+
+  .body-container{
+    min-height: 100vh;
+
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 100px;
+    }
+  }
+  
+  html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .body-container{
+    display: flex;
+  }
+  
+  /*# sourceMappingURL=App.css.map */
+  
